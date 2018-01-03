@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<db Version="0.1">
+<Unit name="Peasant">
+        <AttackSkill>1</AttackSkill>
+        <DefenceSkill>1</DefenceSkill>
+        <Shots>0</Shots>
+        <MinDamage>1</MinDamage>
+        <MaxDamage>1</MaxDamage>
+        <Initiative>8</Initiative>
+        <Health>3</Health>
+        <Path>./img/units/Peasant.jpg</Path>
+        <Text>The peasants are the basic infantry of the Empire.
+Though weak and poorly trained, they are numerous.
+Peasants are an important source of revenue for their masters.
+        </Text>
+        <KnownSpells>
+                <Spell>None</Spell>
+        </KnownSpells>
+        <SpellPoints>0</SpellPoints>
+        <Abilities>
+                <Ability>None</Ability>
+        </Abilities>
+</Unit>
+<Unit name="Archer">
+        <AttackSkill>4</AttackSkill>
+        <DefenceSkill>3</DefenceSkill>
+        <Shots>10</Shots>
+        <MinDamage>2</MinDamage>
+        <MaxDamage>4</MaxDamage>
+        <Initiative>9</Initiative>
+        <Health>7</Health>
+        <Path>./img/units/Archer.jpg</Path>
+        <Text>Archers are useful in battle to weaken the enemy ranks before melee combat.
+The archers of the Griffin Empire excel in the art of overwhelming the enemy with barrages of arrows.
+        </Text>
+        <KnownSpells>
+                <Spell>None</Spell>
+        </KnownSpells>
+        <SpellPoints>0</SpellPoints>
+        <Abilities>
+                <Ability>None</Ability>
+        </Abilities>
+</Unit>
+<Unit name="Footman">
+        <AttackSkill>4</AttackSkill>
+        <DefenceSkill>8</DefenceSkill>
+        <Shots>0</Shots>
+        <MinDamage>2</MinDamage>
+        <MaxDamage>4</MaxDamage>
+        <Initiative>8</Initiative>
+        <Health>16</Health>
+        <Path>./img/units/Footman.jpg</Path>
+        <Text>The Footmen are a defensive backbone of the Griffin Empire forces.
+They can sustain attacks while other Griffin units manoeuvre to destroy the enemy.
+        </Text>
+        <KnownSpells>
+                <Spell>None</Spell>
+        </KnownSpells>
+        <SpellPoints>0</SpellPoints>
+        <Abilities>
+                <Ability>Large Shield</Ability>
+                <Ability>Bash</Ability>
+                <Ability>Enraged</Ability>
+
+        </Abilities>
+</Unit>
+<Unit name="Angel">
+        <AttackSkill>27</AttackSkill>
+        <DefenceSkill>27</DefenceSkill>
+        <Shots>0</Shots>
+        <MinDamage>45</MinDamage>
+        <MaxDamage>45</MaxDamage>
+        <Initiative>11</Initiative>
+        <Health>180</Health>
+        <Path>./img/units/Angel.jpg</Path>
+        <Text>The Angels are the incarnation of Elrath on Ashan, and as such they are the ultimate representation of his power.
+These creatures of Light are fierce in combat and their attacks are always deadly. An angel cannot be killed, if its body is endangered it will return to its spirit form and rejoin its master.
+        </Text>
+        <KnownSpells>
+                <Spell>Heal</Spell>
+        </KnownSpells>
+        <SpellPoints>0</SpellPoints>
+        <Abilities>
+                <Ability>Flyer</Ability>
+                <Ability>Resurrect Allies</Ability>
+        </Abilities>
+</Unit>
+<Unit name="Imp">
+        <AttackSkill>2</AttackSkill>
+        <DefenceSkill>3</DefenceSkill>
+        <Shots>0</Shots>
+        <MinDamage>1</MinDamage>
+        <MaxDamage>2</MaxDamage>
+        <Initiative>13</Initiative>
+        <Health>4</Health>
+        <Path>./img/units/Imp.jpg</Path>
+        <Text>Imps are small cunning creatures who are rather weak in close combat -- their strength lies in numbers.
+        </Text>
+        <KnownSpells>
+                <Spell>None</Spell>
+        </KnownSpells>
+        <SpellPoints>0</SpellPoints>
+        <Abilities>
+                <Ability>Mana Stealer</Ability>
+        </Abilities>
+</Unit>
+<Unit name="Gog">
+        <AttackSkill>6</AttackSkill>
+        <DefenceSkill>4</DefenceSkill>
+        <Shots>10</Shots>
+        <MinDamage>2</MinDamage>
+        <MaxDamage>4</MaxDamage>
+        <Initiative>11</Initiative>
+        <Health>13</Health>
+        <Path>./img/units/Gog.jpg</Path>
+        <Text>These infernal creatures are the backbone of the demon ranks.
+They fire their fireballs destroying the enemy ranks in the process.
+        </Text>
+        <KnownSpells>
+                <Spell>None</Spell>
+        </KnownSpells>
+        <SpellPoints>0</SpellPoints>
+        <Abilities>
+                <Ability>none</Ability>
+        </Abilities>
+</Unit>
+<Unit name="Hell Hound">
+        <AttackSkill>4</AttackSkill>
+        <DefenceSkill>2</DefenceSkill>
+        <Shots>0</Shots>
+        <MinDamage>3</MinDamage>
+        <MaxDamage>5</MaxDamage>
+        <Initiative>13</Initiative>
+        <Health>15</Health>
+        <Path>./img/units/Hell_Hound.jpg</Path>
+        <Text>Fury drives the Hell Hound to move quickly around the battlefield, striking with great strength and anger.
+Their rage when fighting is also a weakness, however.
+Hell Hounds care little for their own safety and leave themselves vulnerable in order to focus all their energy on the attack.
+        </Text>
+        <KnownSpells>
+                <Spell>None</Spell>
+        </KnownSpells>
+        <SpellPoints>0</SpellPoints>
+        <Abilities>
+                <Ability>No Enemy Retaliation</Ability>
+        </Abilities>
+</Unit>
+<Unit name="Devil">
+        <AttackSkill>27</AttackSkill>
+        <DefenceSkill>25</DefenceSkill>
+        <Shots>0</Shots>
+        <MinDamage>33</MinDamage>
+        <MaxDamage>66</MaxDamage>
+        <Initiative>11</Initiative>
+        <Health>166</Health>
+        <Path>./img/units/Devil.jpg</Path>
+        <Text>Devils are summoned from their fiery realm to lead the battle under the command of heroes from Sheogh.
+They have the ability to teleport on the field of battle, which means that no enemy can escape their savagery.
+        </Text>
+        <KnownSpells>
+                <Spell>None</Spell>
+        </KnownSpells>
+        <SpellPoints>0</SpellPoints>
+        <Abilities>
+                <Ability>Teleport</Ability>
+        </Abilities>
+</Unit>
+<Unit name="Skeleton Archer">
+        <AttackSkill>1</AttackSkill>
+        <DefenceSkill>2</DefenceSkill>
+        <Shots>8</Shots>
+        <MinDamage>1</MinDamage>
+        <MaxDamage>2</MaxDamage>
+        <Initiative>10</Initiative>
+        <Health>5</Health>
+        <Path>./img/units/Skeleton_Archer.jpg</Path>
+        <Text>Armed with bow and arrow, Skeleton Archers strike from afar.
+High initiative allows Skeletons to strike first, but their weak frames can only withstand a little damage before collapsing.
+        </Text>
+        <KnownSpells>
+                <Spell>None</Spell>
+        </KnownSpells>
+        <SpellPoints>0</SpellPoints>
+        <Abilities>
+                <Ability>Shooter</Ability>
+                <Ability>Undead</Ability>
+        </Abilities>
+</Unit>
+<Unit name="Ghost">
+        <AttackSkill>4</AttackSkill>
+        <DefenceSkill>4</DefenceSkill>
+        <Shots>0</Shots>
+        <MinDamage>2</MinDamage>
+        <MaxDamage>4</MaxDamage>
+        <Initiative>10</Initiative>
+        <Health>16</Health>
+        <Path>./img/units/Ghost.jpg</Path>
+        <Text>Ghosts are restless spirits of the dead, forever bound to the Necromancer who has enslaved them.
+Their bodies are incorporeal, which makes them difficult to hit.
+        </Text>
+        <KnownSpells>
+                <Spell>None</Spell>
+        </KnownSpells>
+        <SpellPoints>0</SpellPoints>
+        <Abilities>
+                <Ability>Incorporeal</Ability>
+                <Ability>Undead</Ability>
+        </Abilities>
+</Unit>
+<Unit name="Vampire">
+        <AttackSkill>6</AttackSkill>
+        <DefenceSkill>6</DefenceSkill>
+        <Shots>0</Shots>
+        <MinDamage>6</MinDamage>
+        <MaxDamage>8</MaxDamage>
+        <Initiative>11</Initiative>
+        <Health>30</Health>
+        <Path>./img/units/Vampire.jpg</Path>
+        <Text>Necromancers who wish to cheat death become Vampires with ever-youthful -- but empty -- bodies.
+Any damage that Vampires inflict upon the living heals their own immortal forms. Gifted with hundreds of years of combat experience, they are so swift with their swords than none can retaliate against their strikes.
+        </Text>
+        <KnownSpells>
+                <Spell>None</Spell>
+        </KnownSpells>
+        <SpellPoints>0</SpellPoints>
+        <Abilities>
+                <Ability>Life Drain</Ability>
+                <Ability>Undead</Ability>
+                <Ability>No Enemy Retaliation</Ability>
+        </Abilities>
+</Unit>
+<Unit name="Spectral Dragon">
+        <AttackSkill>30</AttackSkill>
+        <DefenceSkill>28</DefenceSkill>
+        <Shots>0</Shots>
+        <MinDamage>25</MinDamage>
+        <MaxDamage>35</MaxDamage>
+        <Initiative>11</Initiative>
+        <Health>160</Health>
+        <Path>./img/units/Spectral_Dragon.jpg</Path>
+        <Text>No single type of dragon gives up its bones to form a Spectral Dragon.
+Instead, these fell beasts are composed of the bones of every breed of dragon, cunningly arranged into a single skeleton and infused with unlife by the sacrifice of a high-ranking Necromancer's soul.
+        </Text>
+        <KnownSpells>
+                <Spell>None</Spell>
+        </KnownSpells>
+        <SpellPoints>0</SpellPoints>
+        <Abilities>
+                <Ability>Cursing Attack</Ability>
+                <Ability>Undead</Ability>
+        </Abilities>
+</Unit>
+<Unit name="Gremlin ">
+        <AttackSkill>2</AttackSkill>
+        <DefenceSkill>2</DefenceSkill>
+        <Shots>0</Shots>
+        <MinDamage>2</MinDamage>
+        <MaxDamage>3</MaxDamage>
+        <Initiative>7</Initiative>
+        <Health>5</Health>
+        <Path>./img/units/Gremlin.jpg</Path>
+        <Text>Creatures born as a result of magical experiments on captured goblins.
+        </Text>
+        <KnownSpells>
+            <Spell>None</Spell>
+        </KnownSpells>
+        <SpellPoints>0</SpellPoints>
+        <Abilities>
+            <Ability>Shooter</Ability>
+        </Abilities>
+</Unit>
+<Unit name="Iron Golem">
+        <AttackSkill>5</AttackSkill>
+        <DefenceSkill>5</DefenceSkill>
+        <Shots>0</Shots>
+        <MinDamage>3</MinDamage>
+        <MaxDamage>5</MaxDamage>
+        <Initiative>7</Initiative>
+        <Health>18</Health>
+        <Path>./img/units/Iron_Golem.jpg</Path>
+        <Text>Golems are ancient magical constructs that are used as primary battle units by the Silver Cities.
+Golems are armed with two long curved swords, and their substance is their armour.
+Iron golems are impervious to slowing effects - they really can't get much slower - and are well protected against magic
+(all damage from such attacks is halved).
+        </Text>
+        <KnownSpells>
+                <Spell>None</Spell>
+        </KnownSpells>
+        <SpellPoints>0</SpellPoints>
+        <Abilities>
+                <Ability>Mechanical</Ability>
+                <Ability>Magic Proof 50%</Ability>
+        </Abilities>
+</Unit>
+<Unit name="Mage">
+        <AttackSkill>10</AttackSkill>
+        <DefenceSkill>10</DefenceSkill>
+        <Shots>0</Shots>
+        <MinDamage>7</MinDamage>
+        <MaxDamage>7</MaxDamage>
+        <Initiative>10</Initiative>
+        <Health>18</Health>
+        <Path>./img/units/Mage.jpg</Path>
+        <Text>Some of the Wizards of the Silver Cities serve in the army.
+They are weak in close combat, being armed only with a dagger and unskilled at melee fighting.
+This weakness, however, is more than compensated for by the power of their spells.
+They can fire blasts of pure magical energy that damage any creature in their way - including friendly ones.
+They also carry scrolls with additional spells on them.
+        </Text>
+        <KnownSpells>
+                <Spell>Fireball</Spell>
+        </KnownSpells>
+        <SpellPoints>0</SpellPoints>
+        <Abilities>
+                <Ability>Shooter</Ability>
+                <Ability>Caster</Ability>
+        </Abilities>
+</Unit>
+<Unit name="Titan">
+        <AttackSkill>27</AttackSkill>
+        <DefenceSkill>27</DefenceSkill>
+        <Shots>0</Shots>
+        <MinDamage>40</MinDamage>
+        <MaxDamage>70</MaxDamage>
+        <Initiative>10</Initiative>
+        <Health>175</Health>
+        <Path>./img/units/Titan.jpg</Path>
+        <Text>Colossi are the most powerful creatures that can be built or summoned by the Wizards.
+They are created using the same basic method as golems, but on a much larger scale.
+Each Colossus also hosts a figment of the soul of his creator.
+This unwavering will makes them immune to mind-controlling magic, assuring the Wizards of their unquestionable loyalty.
+Not fond of weapons, Colossi deal heavy blows to their opponents using their massive hands and close combat feats
+        </Text>
+        <KnownSpells>
+                <Spell>Fireball</Spell>
+        </KnownSpells>
+        <SpellPoints>0</SpellPoints>
+        <Abilities>
+                <Ability>Caster</Ability>
+        </Abilities>
+</Unit>
+</db>
+
+

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<db Version="0.1">
+    <Hero name="Nikolai">
+        <AttackSkill>14</AttackSkill>
+        <DefenceSkill>10</DefenceSkill>
+        <Knowledge>40</Knowledge>
+        <Initiative>13</Initiative>
+        <Class>Knight</Class>
+        <Level>15</Level>
+        <Path>./img/hero/Nikolai.jpg</Path>
+        <Text>Nicolai is the king of The Holy Empire.
+        </Text>
+        <KnownSpells>
+            <Spell>Fireball</Spell>
+            <Spell>Raise Dead</Spell>
+            <Spell>Blessing</Spell>
+        </KnownSpells>
+        <SpellPower>4</SpellPower>
+        <Abilities>
+            <Ability>Infantry Commander</Ability>
+        </Abilities>
+    </Hero>
+    <Hero name="Markal">
+        <AttackSkill>3</AttackSkill>
+        <DefenceSkill>10</DefenceSkill>
+        <Knowledge>60</Knowledge>
+        <Initiative>11</Initiative>
+        <Class>Necromancer</Class>
+        <Level>15</Level>
+        <Path>./img/hero/Markal.jpg</Path>
+        <Text>A devoted student of all that Necromancy can offer, Markal has risen to the highest heights that one can achieve among the Necromancers -- while still being alive.
+Formerly the court astrologer and favorite counselor of the Griffin Queen Fiona, Markal established a strong (but secret) base of Death cultists within the Holy Empire.
+The religious leaders of the Church of the Light became suspicious of his nefarious activities, however, and when Fiona passed away her advisor was exiled.
+Realizing that he will no longer circulate freely among the other kingdoms of Ashan once he receives the Kiss of the Spider Goddess, Markal furthers the goals of Heresh through diplomacy and, of course, skullduggery.
+        </Text>
+        <KnownSpells>
+            <Spell>Fireball</Spell>
+            <Spell>Raise Dead</Spell>
+            <Spell>Blessing</Spell>
+        </KnownSpells>
+        <SpellPower>13</SpellPower>
+        <Abilities>
+            <Ability>none</Ability>
+        </Abilities>
+    </Hero>
+    <Hero name="Agrael">
+    <AttackSkill>17</AttackSkill>
+    <DefenceSkill>7</DefenceSkill>
+    <Knowledge>30</Knowledge>
+    <Initiative>15</Initiative>
+    <Health>none</Health>
+    <Class>Demon Lord</Class>
+    <Level>15</Level>
+    <Path>./img/hero/Agrael.jpg</Path>
+    <Text>Agrael rose rapidly through the ranks of Demon cultists to become a trusted right hand of the Demon Sovereign.
+His detractors call him reckless and over-ambitious, but Agrael's measured aggressiveness has made him a feared and respected leader in battle.
+He will attack when a good opportunity presents itself, and does not hesitate to take risks when the rewards are commensurate.
+    </Text>
+    <KnownSpells>
+        <Spell>Fireball</Spell>
+        <Spell>Raise Dead</Spell>
+        <Spell>Blessing</Spell>
+    </KnownSpells>
+    <SpellPower>30</SpellPower>
+    <Abilities>
+        <Ability>Gremlin Master</Ability>
+    </Abilities>
+    </Hero>
+    <Hero name="Havez">
+        <AttackSkill>3</AttackSkill>
+        <DefenceSkill>10</DefenceSkill>
+        <Knowledge>60</Knowledge>
+        <Initiative>11</Initiative>
+        <Class>Necromancer</Class>
+        <Level>15</Level>
+        <Path>./img/hero/Havez.jpg</Path>
+        <Text>Havez has an eye for anything that is quirky or odd. His personal effects are an unusual mix of items from all over Ashan - shadow silk cloths from Ygg-Chall, leatherwork from Irollan, jewels from the Dwarven mines, etc. His interest in the quaint and curious extends to his troops as well, he has for many decades studied the Gremlins and specializes in the upbringing and training of these lizard-like humanoids.
+        </Text>
+        <KnownSpells>
+            <Spell>Fireball</Spell>
+        </KnownSpells>
+        <SpellPower>13</SpellPower>
+        <Abilities>
+            <Ability>none</Ability>
+        </Abilities>
+</Hero>
+</db>
