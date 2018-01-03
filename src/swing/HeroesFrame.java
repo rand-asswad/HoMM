@@ -13,9 +13,9 @@ public class HeroesFrame extends JFrame {
     public HeroesFrame(Game game, int playerID) throws Exception {
         super("Heroes of Might & Magic - Heroes");
         JPanel main = Frame.loadDefault(this);
-        main.setLayout(new GridLayout(1, game.heroDB.size()));
+        main.setLayout(new GridLayout(1, game.heroes.size()));
 
-        for (Hero hero : game.heroDB) {
+        for (Hero hero : game.heroes) {
             //hero = game.genHeroRF(hero.name);   // initializes hero's army
             game.generateArmy(hero);
             JPanel heroPanel = new HeroPanel(hero, game, playerID);    // hero description panel
@@ -136,7 +136,7 @@ public class HeroesFrame extends JFrame {
             public void actionPerformed (ActionEvent e) {
                 try {
                     for (Player player : game.players) {
-                        if (player.Id==playerID) {
+                        if (player.id==playerID) {
                             player.selectHero(hero);
                             System.out.printf("%s selected %s\n", player.name, hero.name);
                         }

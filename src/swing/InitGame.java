@@ -63,7 +63,7 @@ public class InitGame extends JFrame {
 
         for (Player player : game.players) {
             // Declare panel components
-            JLabel playerLabel = new JLabel("Player "+player.Id+":");
+            JLabel playerLabel = new JLabel("Player "+player.id+":");
             JTextField playerName = new JTextField();
             playerName.addFocusListener(new FocusListener() {
                 @Override
@@ -77,7 +77,7 @@ public class InitGame extends JFrame {
             });
             playerName.setText(player.name);
             JButton selectHero = new JButton("Select Hero");
-            selectHero.addActionListener(new SelectHero(game, player.Id));
+            selectHero.addActionListener(new SelectHero(game, player.id));
 
             // adds component to horizontal parallel groups
             labels.addComponent(playerLabel);

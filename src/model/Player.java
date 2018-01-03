@@ -2,14 +2,14 @@ package model;
 public class Player {
 
     public String name;
-    public int Id;
+    public int id;
     public boolean hasTurn;
 
     public Hero selected_hero;
 
-    public Player(int Id) {
-        this.Id = Id;
-        this.name = "Player " + String.valueOf(Id);
+    public Player(int id) {
+        this.id = id;
+        this.name = "Player " + String.valueOf(id);
     }
 
     public void selectHero(Hero hero) {
