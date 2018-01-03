@@ -2,6 +2,7 @@ package swing;
 
 import java.awt.*;
 import java.awt.event.*;
+import java.io.IOException;
 import javax.swing.*;
 
 public class MainMenu extends JFrame {
@@ -41,7 +42,12 @@ public class MainMenu extends JFrame {
 
     class DisplayRules implements ActionListener {
         public void actionPerformed (ActionEvent e) {
-            System.exit(0);//to be changed
+            try {
+                JFrame rulesFrame = new RulesFrame();
+                rulesFrame.setVisible(true);
+                MainMenu.this.setVisible(false);
+            }
+            catch (IOException exp) {}
         }
     }
 }

@@ -6,7 +6,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class GameOver extends JFrame {
-    public GameOver(BattleController bc) throws UnsupportedLookAndFeelException {
+    public GameOver(BattleController bc) {
         super("Heroes of Might & Magic - Game Over");
         JPanel main = Frame.loadDefault(this);
         main.setLayout(new BoxLayout(main, BoxLayout.Y_AXIS));
