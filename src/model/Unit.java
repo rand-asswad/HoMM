@@ -1,5 +1,4 @@
 package model;
-import java.text.DecimalFormat;
 import java.util.*;
 
 
@@ -8,9 +7,9 @@ public class Unit extends Entity {
     Random rand = new Random();
 
     public Unit() {
-        this.Abilities = new ArrayList<Ability>();
-        this.KnownSpells = new ArrayList<Spell>();
-      // this.DefenceSkill += this.master.DefenceSkill;
+        this.abilities = new ArrayList<Ability>();
+        this.knownSpells = new ArrayList<Spell>();
+      // this.defenceSkill += this.master.defenceSkill;
     }
 
     Hero master;
@@ -27,14 +26,14 @@ public class Unit extends Entity {
     }
 
     public void Defend() {
-        this.DefenceSkill = this.DefenceSkill + 0.2f * this.DefenceSkill;
+        this.defenceSkill = this.defenceSkill + 0.2f * this.defenceSkill;
     }
 
     public int getAttackDamage(Unit c) {
-        if (AttackSkill >= DefenceSkill)
-            return (int) (generateRandomDamageMinMax() * (1 + 0.05 * (this.AttackSkill - c.DefenceSkill)));
+        if (attackSkill >= defenceSkill)
+            return (int) (generateRandomDamageMinMax() * (1 + 0.05 * (this.attackSkill - c.defenceSkill)));
         else
-            return (int) (generateRandomDamageMinMax() / (1 + 0.05 * (this.DefenceSkill - c.AttackSkill)));
+            return (int) (generateRandomDamageMinMax() / (1 + 0.05 * (this.defenceSkill - c.attackSkill)));
     }
     public float generateRandomDamageMinMax(){
         return  rand.nextFloat()*(MaxDamage-MinDamage)+MinDamage;

@@ -14,7 +14,7 @@ public class RaiseDeadSpell extends Spell {
         c.CombatSize = c.StackHealth / c.Health;
         double temp = Math.ceil(c.StackHealth / c.Health);
         c.RoundedCombatSize = (int) temp;
-        System.out.println(this.CastingHero.Name + " cast Raise Dead on " + c.Name + "." + "\n Creatures revived " + RoundedRaisedCreatures+ ". \n Population is now  "+ c.RoundedCombatSize);
+        System.out.println(this.CastingHero.name + " cast Raise Dead on " + c.name + "." + "\n Creatures revived " + RoundedRaisedCreatures+ ". \n Population is now  "+ c.RoundedCombatSize);
         CastingHero.Knowledge -= 30;
     }*/
 }

@@ -83,7 +83,7 @@ public class Army {
 
         @Override
         public int compare(Stack s1, Stack s2) {
-            return Double.compare(s1.unit.Initiative, s2.unit.Initiative);
+            return Double.compare(s1.unit.initiative, s2.unit.initiative);
         }
     };
 
@@ -91,7 +91,7 @@ public class Army {
         int i = 0;
         int nf = -1;
         for (Stack s : stacks) {
-            if (s.unit.Name.equals(f.unit.Name))
+            if (s.unit.name.equals(f.unit.name))
                 return i;
             i++;
         }
@@ -105,9 +105,9 @@ public class Army {
     }
 
     public ArrayList<String> unitNames() {
-        ArrayList<String> names = new ArrayList<>();
+        ArrayList<String> names = new ArrayList<String>();
         for (Stack s : stacks) {
-            names.add(s.unit.Name);
+            names.add(s.unit.name);
         }
         return names;
     }

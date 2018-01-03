@@ -22,8 +22,8 @@ public class BattleController {
     }
 
     private void initArmies(Game game) {
-        this.armies = new ArrayList<Army>(game.Players.size());
-        for (Player player : this.game.Players) {
+        this.armies = new ArrayList<Army>(game.players.size());
+        for (Player player : this.game.players) {
             this.armies.add(player.selected_hero.army);
         }
     }
@@ -73,7 +73,7 @@ public class BattleController {
      */
     public void dealDamage(Stack target) {
         target.receiveDamage(has_turn.getAttackDamage(target));
-        System.out.println(has_turn.unit.Name+" dealt damage to "+target.unit.Name);
+        System.out.println(has_turn.unit.name +" dealt damage to "+target.unit.name);
         if (target.isDead()) {
             int a = armies.get(0).findStackIndex(target);
             if (a != -1) {
@@ -128,7 +128,7 @@ public class BattleController {
 
         @Override
         public int compare(Stack s1, Stack s2) {
-            return Integer.compare(s2.unit.Initiative, s1.unit.Initiative);
+            return Integer.compare(s2.unit.initiative, s1.unit.initiative);
         }
     };
 

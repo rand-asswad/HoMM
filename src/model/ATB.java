@@ -17,7 +17,7 @@ public class ATB {
     public static void update(ArrayList<Stack> stacks) {
 
         for (Stack s : stacks) {
-            s.bar.value += s.unit.Initiative * 0.05f;
+            s.bar.value += s.unit.initiative * 0.05f;
 
         }
 

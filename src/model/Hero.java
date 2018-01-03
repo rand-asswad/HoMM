@@ -7,16 +7,16 @@ import java.util.*;
 public class Hero extends Entity {
 
     public Hero() {
-        this.Abilities = new ArrayList<Ability>();
-        this.KnownSpells = new ArrayList<Spell>();
+        this.abilities = new ArrayList<Ability>();
+        this.knownSpells = new ArrayList<Spell>();
         Random generator = new Random();
-        this.Initiative = generator.nextInt();
+        this.initiative = generator.nextInt();
     }
 
     public int Knowledge;
     public Spell currentSpell;
     public int SpellPower;
-    public Army army= new Army();
+    public Army army = new Army();
     public String Class;
     public int Level;
     public Player player;
@@ -38,7 +38,7 @@ public class Hero extends Entity {
 
     public Spell identifySpell(String spellname) throws Exception {
         for (Spell spell :
-                this.KnownSpells
+                this.knownSpells
                 ) {
             if (spell.SpellName.equals(spellname)) {
                 return spell;

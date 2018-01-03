@@ -7,16 +7,16 @@ public abstract class Entity {
     public Entity() {
     }
 
-    public float AttackSkill;
-    public float DefenceSkill;
-    public int Initiative;
-    public int Shots;
-    public ArrayList<Spell> KnownSpells;
-    public ArrayList<Ability> Abilities;
-    public boolean CanBeKilled;
-    public String Name;
-    public String Text;
-    public String Path;
+    public float attackSkill;
+    public float defenceSkill;
+    public int initiative;
+    public int shots;
+    public ArrayList<Spell> knownSpells;
+    public ArrayList<Ability> abilities;
+    public boolean canBeKilled;
+    public String name;
+    public String text;
+    public String path;
     /*public void Defend() {
     }*/
 
@@ -26,8 +26,9 @@ public abstract class Entity {
     public abstract void CastSpell(String spellname, Unit c);
 
 
+    @Override
     public String toString() {
-        return this.Name;
+        return this.name;
     }
 
 }

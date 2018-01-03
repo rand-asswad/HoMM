@@ -16,11 +16,11 @@ public class FireballSpell extends Spell {
             System.out.println();
             double temp = Math.ceil(c.StackHealth / c.Health);
             c.RoundedCombatSize = (int) temp;
-            System.out.println(this.CastingHero.Name + " cast Fireball on " + c.Name + "." + " Damage done " + new DecimalFormat("##.##").format(damage));
+            System.out.println(this.CastingHero.name + " cast Fireball on " + c.name + "." + " Damage done " + new DecimalFormat("##.##").format(damage));
             if (c.RoundedCombatSize > 0) {
-                System.out.println(c.Name + "(s) left " + c.RoundedCombatSize);
+                System.out.println(c.name + "(s) left " + c.RoundedCombatSize);
             } else {
-                System.out.println("Only one " + c.Name + " left.");
+                System.out.println("Only one " + c.name + " left.");
             }
         } else {
             System.out.println("All creatures in the stack are dead");

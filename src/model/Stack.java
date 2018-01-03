@@ -1,9 +1,4 @@
 package model;
-import java.text.DecimalFormat;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.Random;
 
 public class Stack {
 
@@ -67,7 +62,7 @@ public class Stack {
     }
 
     public int getAttackDamage(Stack c) {
-        if (unit.AttackSkill > c.unit.DefenceSkill)
+        if (unit.attackSkill > c.unit.defenceSkill)
             return (number_units * c.unit.getAttackDamage(c.unit));
         else
             return number_units * unit.getAttackDamage(c.unit);

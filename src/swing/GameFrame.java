@@ -29,8 +29,8 @@ public class GameFrame extends JFrame {
         JPanel playerInfo = new JPanel();
         //playerInfo.setLayout(new BoxLayout(playerInfo, BoxLayout.X_AXIS));
         //playerInfo.setMaximumSize(Frame.subPanelDimension);
-        JLabel playerName = new JLabel("<html><h1>"+player.name+"</h1><br><h2>"+player.selected_hero.Name+"</h2></html>");
-        JLabel heroIcon = new JLabel(new ImageIcon(player.selected_hero.Path));
+        JLabel playerName = new JLabel("<html><h1>"+player.name+"</h1><br><h2>"+player.selected_hero.name +"</h2></html>");
+        JLabel heroIcon = new JLabel(new ImageIcon(player.selected_hero.path));
         playerInfo.add(playerName);
         playerInfo.add(heroIcon);
         main.add(playerInfo);
@@ -60,9 +60,9 @@ public class GameFrame extends JFrame {
     public static JPanel createUnitPanel(Stack stack) {
         JPanel panel = new JPanel();
         panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
-        ImageIcon unitImg = new ImageIcon(stack.unit.Path);
+        ImageIcon unitImg = new ImageIcon(stack.unit.path);
         JComponent unitIcon = new JLabel(unitImg);
-        JComponent unitName = new JLabel(stack.unit.Name);
+        JComponent unitName = new JLabel(stack.unit.name);
         String displayNbUnits = "UNITS: " + String.valueOf(stack.number_units);
         JComponent nbUnits = new JLabel(displayNbUnits);
         panel.add(unitIcon);

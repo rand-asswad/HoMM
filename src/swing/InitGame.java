@@ -44,7 +44,7 @@ public class InitGame extends JFrame {
 
     private void initPlayers(JPanel playersPanel, Game game) {
         // Sets border for players panel
-        TitledBorder title = BorderFactory.createTitledBorder("Players");
+        TitledBorder title = BorderFactory.createTitledBorder("players");
         playersPanel.setBorder(title);
 
         // Initialize panel parameters
@@ -61,7 +61,7 @@ public class InitGame extends JFrame {
         GroupLayout.ParallelGroup selected = layout.createParallelGroup();
         GroupLayout.SequentialGroup vGroup = layout.createSequentialGroup();
 
-        for (Player player : game.Players) {
+        for (Player player : game.players) {
             // Declare panel components
             JLabel playerLabel = new JLabel("Player "+player.Id+":");
             JTextField playerName = new JTextField();
@@ -91,7 +91,7 @@ public class InitGame extends JFrame {
             playerGroup.addComponent(selectHero);
 
             try {
-                JLabel selectedHero = new JLabel(player.selected_hero.Name);
+                JLabel selectedHero = new JLabel(player.selected_hero.name);
                 selected.addComponent(selectedHero);
                 playerGroup.addComponent(selectedHero);
             }
