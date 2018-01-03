@@ -10,6 +10,8 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 public class RulesFrame extends JFrame {
+    private final String filePath = "rules.txt";
+
     RulesFrame() throws IOException {
         super("Heroes of Might & Magic - Game Rules");
         JPanel main = Frame.loadDefault(this);
@@ -22,7 +24,7 @@ public class RulesFrame extends JFrame {
 
         // reads file into label
         JXLabel rules = new JXLabel();
-        rules.setText(readFile("./rules.txt"));
+        rules.setText(this.importRules());
         rules.setTextAlignment(JXLabel.TextAlignment.JUSTIFY);
         rules.setLineWrap(true);
         rules.setBorder(new EmptyBorder(10,10,10,10));
@@ -51,7 +53,7 @@ public class RulesFrame extends JFrame {
         main.add(buttons);
     }
 
-    String readFile(String filePath) throws IOException {
-        return new String(Files.readAllBytes(Paths.get(filePath)));
+    private String importRules() throws IOException {
+        return new String(Files.readAllBytes(Paths.get(this.filePath)));
     }
 }

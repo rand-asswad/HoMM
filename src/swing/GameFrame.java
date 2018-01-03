@@ -7,15 +7,15 @@ import javax.swing.border.EmptyBorder;
 
 public class GameFrame extends JFrame {
 
-    ImageIcon attackIcon = new ImageIcon("./img/buttons/attack.jpg");
-    ImageIcon defenseIcon = new ImageIcon("./img/buttons/defense.jpg");
-    ImageIcon spellIcon = new ImageIcon("./img/buttons/spell.jpg");
+    final private ImageIcon attackIcon = new ImageIcon("img/buttons/attack.jpg");
+    final private ImageIcon defenseIcon = new ImageIcon("img/buttons/defense.jpg");
+    final private ImageIcon spellIcon = new ImageIcon("img/buttons/spell.jpg");
 
-    final static int ATTACK = 1;
-    final static int DEFENSE = -1;
-    final static int WAIT = 0;
+    final private static int ATTACK = 1;
+    final private static int DEFENSE = -1;
+    final private static int WAIT = 0;
 
-    BattleController battleController;
+    private BattleController battleController;
     
     public GameFrame(BattleController bc) {
         super("Heroes of Might & Magic");
@@ -57,7 +57,7 @@ public class GameFrame extends JFrame {
         main.add(scrollQueue);
     }
 
-    public static JPanel createUnitPanel(Stack stack) {
+    private JPanel createUnitPanel(Stack stack) {
         JPanel panel = new JPanel();
         panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
         ImageIcon unitImg = new ImageIcon(stack.unit.path);

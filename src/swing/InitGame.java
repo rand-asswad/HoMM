@@ -147,7 +147,6 @@ public class InitGame extends JFrame {
     class GoToMainMenu implements ActionListener {
         public void actionPerformed (ActionEvent e) {
             try {
-                Game game = new Game();
                 MainMenu menu = new MainMenu();
                 menu.setVisible(true);
                 InitGame.this.setVisible(false);

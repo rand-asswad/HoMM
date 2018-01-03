@@ -7,8 +7,8 @@ import java.util.*;
 import java.lang.*;
 
 public class ParseXML {
-    private static File unitDB = new File("./database/unitdb.xml");
-    private static File heroDB = new File("./database/heroesdb.xml");
+    private final static File unitDB = new File("database/unitdb.xml");
+    private final static File heroDB = new File("database/heroesdb.xml");
 
     static ArrayList<Unit> importUnits() throws Exception {
         ArrayList<Unit> creatures = new ArrayList<Unit>();
